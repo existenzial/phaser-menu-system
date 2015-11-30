@@ -9,12 +9,12 @@ GameMenu.prototype = {
   },
 
   init: function () {
-    this.titleText = game.make.text(game.world.centerX, 100, "Game Title", {
+    this.titleText = game.make.text(game.world.centerX, 100, "Cape Runner", {
       font: 'bold 60pt TheMinion',
-      fill: '#FDFFB5',
+      fill: '#c37c01',
       align: 'center'
     });
-    this.titleText.setShadow(3, 3, 'rgba(0,0,0,0.5)', 5);
+    this.titleText.setShadow(3, 3, 'rgba(0,0,0,1.5)', 5);
     this.titleText.anchor.set(0.5);
     this.optionCount = 1;
   },
