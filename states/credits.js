@@ -52,21 +52,20 @@ Credits.prototype = {
   create: function () {
     this.stage.disableVisibilityChange = true;
     if (gameOptions.playMusic) {
-      musicPlayer.stop();
-      musicPlayer = game.add.audio('exit');
-      musicPlayer.play();
+//      musicPlayer.stop();
+//      musicPlayer = game.add.audio('exit');
+//      musicPlayer.play();
     }
     var bg = game.add.sprite(0, 0, 'gameover-bg');
-    this.addCredit('Music', 'Kevin Macleod');
-    this.addCredit('Developer', 'Matt McFarland');
-    this.addCredit('Lorem Ipsum', 'Mipsem Dempsum');
-    this.addCredit('Caveats', 'Keyboard Cat');
-    this.addCredit('Phaser.io', 'Powered By');
+    this.addCredit('Developer', 'Shanna Sullivan');
+    this.addCredit('Developer', 'Jazz Lyles');
+    this.addCredit('Developer', 'Darryl Nunn');
+    this.addCredit('Phaser.io & Ionic', 'Powered By');
     this.addCredit('for playing', 'Thank you');
     this.addMenuOption('<- Back', function (e) {
       game.state.start("GameMenu");
     });
-    game.add.tween(bg).to({alpha: 0}, 20000, Phaser.Easing.Cubic.Out, true, 40000);
+    game.add.tween(bg).to({alpha: 0}, 20000, Phaser.Easing.Cubic.Out, true, 10000);
   }
 
 };

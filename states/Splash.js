@@ -15,14 +15,14 @@ Splash.prototype = {
 
   loadBgm: function () {
     // thanks Kevin Macleod at http://incompetech.com/
-    game.load.audio('dangerous', 'assets/bgm/Dangerous.mp3');
-    game.load.audio('exit', 'assets/bgm/Exit the Premises.mp3');
+    game.load.audio('dangerous', 'assets/bgm/background_music.mp3');
+    game.load.audio('exit', 'assets/bgm/background_music.mp3');
   },
   // varios freebies found from google image search
   loadImages: function () {
-    game.load.image('menu-bg', 'assets/images/menu-bg.jpg');
+    game.load.image('menu-bg', 'assets/images/BigAutumn.jpg');
     game.load.image('options-bg', 'assets/images/options-bg.jpg');
-    game.load.image('gameover-bg', 'assets/images/gameover-bg.jpg');
+    game.load.image('gameover-bg', 'assets/images/BigSummer.jpg');
   },
 
   loadFonts: function () {
